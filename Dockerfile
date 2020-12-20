@@ -1,7 +1,7 @@
-FROM alpine:3.9
-MAINTAINER Christoph Wiechert <wio@psitrax.de>
+FROM alpine:3.12
+MAINTAINER Alex Wellnitz <admin@wellcom.rocks>
 
-ENV POWERDNS_VERSION=4.3.1 \
+ENV POWERDNS_VERSION=4.4.0 \
     MYSQL_DEFAULT_AUTOCONF=true \
     MYSQL_DEFAULT_HOST="mysql" \
     MYSQL_DEFAULT_PORT="3306" \

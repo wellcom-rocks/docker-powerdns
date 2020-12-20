@@ -27,7 +27,7 @@ $ docker run -d \
   --name pdns-mysql \
   -e MYSQL_ROOT_PASSWORD=supersecret \
   -v $PWD/mysql-data:/var/lib/mysql \
-  mariadb:10.1
+  mariadb:10.5
 
 $ docker run --name pdns \
   --link pdns-mysql:mysql \
@@ -36,7 +36,7 @@ $ docker run --name pdns \
   -e MYSQL_USER=root \
   -e MYSQL_PASS=supersecret \
   -e MYSQL_PORT=3306 \
-  psitrax/powerdns \
+  wellcom/powerdns \
     --cache-ttl=120 \
     --allow-axfr-ips=127.0.0.1,123.1.2.3
 ```
